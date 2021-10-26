@@ -2,14 +2,11 @@
     box-sizing: border-box;
 }
 
-body, h1, h2, h3, h4 {
+body, h1, h2, h3, p{
     margin: 0;
-    height: 100%;
-    width: 100%;
 }
 
 #app {
-    border: 1px solid green;
     width: 100%;
     display: grid;
     grid-template-areas: "head head head"
@@ -17,10 +14,6 @@ body, h1, h2, h3, h4 {
                          "foot foot foot";
     grid-template-columns: 10% 1fr 10%;
     grid-template-rows: 50px 1fr 50px;
-}
-
-.area {
-    border: 1px solid red;
 }
 
 #app > .top-bar {
@@ -33,4 +26,39 @@ body, h1, h2, h3, h4 {
 
 #app > .bottom-bar {
     grid-area: foot;
+}
+
+.page-title {
+    font-size: 2.5rem;
+    text-align: center;
+}
+
+.recent-post {
+    width: 100%;
+}
+
+.large-card {
+    margin: 1rem 3rem;
+    display: flex;
+    flex: 1 1 0px;
+    max-height: 250px;
+    width: 100%;
+}
+
+.large-card-image {
+}
+
+.large-card-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+.large-card-text {
+    padding: 2rem;
+}
+
+.label-list {
+    display: flex;
 }
