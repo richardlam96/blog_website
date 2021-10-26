@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4 {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+}
+
+#app {
+    border: 1px solid green;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100px 1fr 100px;
+    grid-template-rows: 100px 200px 1fr 1fr 100px;
+    grid-template-areas: 
+        "head head head"
+        "spacing main spacing"
+        "spacing main spacing"
+        "spacing main spacing"
+        "foot foot foot";
+}
+
+.area {
+    border: 1px solid red;
+}
+
+#app > .top-bar {
+    grid-area: head;
+}
+
+#app > .main-content {
+    grid-area: main;
+}
+
+#app > .bottom-bar {
+    grid-area: foot;
+}
