@@ -12,14 +12,11 @@ body, h1, h2, h3, h4 {
     border: 1px solid green;
     width: 100%;
     display: grid;
-    grid-template-columns: 100px 1fr 100px;
-    grid-template-rows: 100px 200px 1fr 1fr 100px;
-    grid-template-areas: 
-        "head head head"
-        "spacing main spacing"
-        "spacing main spacing"
-        "spacing main spacing"
-        "foot foot foot";
+    grid-template-areas: "head head head"
+                         ". main ."
+                         "foot foot foot";
+    grid-template-columns: 10% 1fr 10%;
+    grid-template-rows: 50px 1fr 50px;
 }
 
 .area {
