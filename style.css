@@ -12,7 +12,7 @@ body, h1, h2, h3, p{
     grid-template-areas: "head head head"
                          ". main ."
                          "foot foot foot";
-    grid-template-columns: 10% 1fr 10%;
+    grid-template-columns: minmax(20%, auto) 1fr minmax(20%, auto);
     grid-template-rows: 50px 1fr 50px;
 }
 
@@ -33,32 +33,38 @@ body, h1, h2, h3, p{
     text-align: center;
 }
 
-.recent-post {
-    width: 100%;
-}
-
 .large-card {
     margin: 1rem 3rem;
     display: flex;
-    flex: 1 1 0px;
     max-height: 250px;
     width: 100%;
 }
 
 .large-card-image {
+    margin: 1rem;
 }
 
 .large-card-image > img {
     height: 100%;
+    min-width: 300px;
     width: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
 .large-card-text {
-    padding: 2rem;
+    border-left: 1px solid grey;
+    padding: 1rem;
 }
 
-.label-list {
+.large-card-text > p {
+    flex-grow: 2;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.large-card-labels {
     display: flex;
 }
