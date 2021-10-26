@@ -34,7 +34,6 @@ body, h1, h2, h3, p{
 }
 
 .large-card {
-    margin: 1rem 3rem;
     display: flex;
     max-height: 250px;
     width: 100%;
@@ -42,29 +41,65 @@ body, h1, h2, h3, p{
 
 .large-card-image {
     margin: 1rem;
+    min-width: 300px;
+    max-width: 450px;
 }
 
 .large-card-image > img {
     height: 100%;
-    min-width: 300px;
     width: 100%;
     object-fit: cover;
     object-position: bottom;
 }
 
 .large-card-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 0.5rem;
     border-left: 1px solid grey;
     padding: 1rem;
 }
 
 .large-card-text > p {
-    flex-grow: 2;
-    display: -webkit-box;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
+    flex-grow: 1;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
-.large-card-labels {
+.card-labels {
     display: flex;
 }
+
+.card-labels > .label {
+    border: 1px solid blue;
+    border-radius: 10%;
+    margin: 0.25rem;
+    padding: 0.25rem;
+    min-width: 8ch;
+    text-align: center;
+}
+
+.small-card-list {
+    display: flex;
+}
+
+.small-card {
+    border: 1px solid red;
+    flex: 1 0 33%;
+    flex-direction: column;
+}
+
+.small-card-image {
+    margin: 1rem;
+    min-width: 200px;
+    max-width: 300px;
+}
+
+.small-card-image > img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: bottom;
+}
+
