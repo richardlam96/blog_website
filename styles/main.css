@@ -1,0 +1,41 @@
+@import "./header_styles.css";
+@import "./main_content_styles.css";
+@import "./footer_styles.css";
+
+* {
+    box-sizing: border-box;
+}
+
+
+body, h1, h2, h3, p {
+    margin: 0;
+}
+
+html, body {
+    height: 100%;
+}
+
+#app {
+    width: 100%;
+    min-height: 100%;
+    display: grid;
+    grid-template-areas: "head head head"
+                         ". main ."
+                         "foot foot foot";
+    grid-template-columns: minmax(10%, auto) 1fr minmax(10%, auto);
+    grid-template-rows: 50px 1fr 50px;
+}
+
+#app > .top-bar {
+    border: 1px solid black;
+    grid-area: head;
+}
+
+#app > .main-content {
+    grid-area: main;
+}
+
+#app > .bottom-bar {
+    border: 1px solid black;
+    grid-area: foot;
+}
