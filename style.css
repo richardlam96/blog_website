@@ -2,12 +2,18 @@
     box-sizing: border-box;
 }
 
+
 body, h1, h2, h3, p{
     margin: 0;
 }
 
+html, body {
+    height: 100%;
+}
+
 #app {
     width: 100%;
+    min-height: 100%;
     display: grid;
     grid-template-areas: "head head head"
                          ". main ."
@@ -61,6 +67,7 @@ body, h1, h2, h3, p{
 }
 
 .card-text {
+    width: 100%;
     border: 1px solid blue;
     display: flex;
     flex-direction: column;
@@ -74,7 +81,7 @@ body, h1, h2, h3, p{
 }
 
 .card-labels > .label {
-    border: 1px solid blue;
+    border: 1px solid teal;
     border-radius: 10%;
     margin: 0.25rem;
     padding: 0.25rem;
@@ -84,14 +91,28 @@ body, h1, h2, h3, p{
 
 .card-list {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+    flex-direction: column;
     row-gap: 1rem;
-    column-gap: 1rem;
 }
 
-.card-list .card {
-    flex: 0 1 calc(33% - 2rem);
-    min-width: 300px;
-    max-width: 400px;
+@media (min-width: 650px) {
+    #recent-post > .card {
+        flex-direction: row;
+    }
+
+    .card-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 1rem;
+    }
+
+    .card-list .card {
+        flex: 1 1 calc(33% - 1rem);
+    }
+}
+
+@media (min-width: 1000px) {
+    #app {
+        grid-template-columns: minmax(10%, auto) 1000px minmax(10%, auto);
+    }
 }
