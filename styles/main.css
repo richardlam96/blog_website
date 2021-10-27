@@ -1,6 +1,6 @@
-@import "./header_styles.css";
-@import "./main_content_styles.css";
-@import "./footer_styles.css";
+@import "./header.css";
+@import "./content.css";
+@import "./footer.css";
 
 * {
     box-sizing: border-box;
