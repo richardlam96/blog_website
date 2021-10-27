@@ -85,12 +85,13 @@ body, h1, h2, h3, p{
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     row-gap: 1rem;
     column-gap: 1rem;
 }
 
 .card-list .card {
-    flex: 1 1 33%;
+    flex: 0 1 calc(33% - 2rem);
+    min-width: 300px;
     max-width: 400px;
 }
