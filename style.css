@@ -117,12 +117,16 @@ html, body {
     }
 
     .card-list .card {
-        flex: 1 1 calc(33% - 1rem);
+        flex: 1 1 calc(50% - 1rem);
     }
 }
 
 @media (min-width: 1000px) {
     #app {
         grid-template-columns: minmax(10%, auto) 1000px minmax(10%, auto);
+    }
+
+    .card-list .card {
+        flex: 1 1 calc(33% - 1rem);
     }
 }
