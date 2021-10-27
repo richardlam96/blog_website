@@ -16,7 +16,6 @@
 }
 
 .card-image {
-    border: 1px solid green;
     max-height: 300px;
     overflow: hidden;
 }
