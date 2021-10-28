@@ -1,11 +1,12 @@
 .nav-bar {
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
 }
 
 .nav-option {
     border: 1px solid green;
+    height: 6ch;
+    line-height: 6ch;
     width: 8ch;
     text-align: center;
 }
