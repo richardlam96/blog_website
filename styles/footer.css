@@ -11,6 +11,10 @@
     line-height: 2rem;
 }
 
+.nav-option i:hover {
+    color: rgb(209, 255, 255);
+}
+
 #user-summary,
 #subscribe-form {
     background: rgba(0, 128, 128, 0.9);
