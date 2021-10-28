@@ -1,13 +1,13 @@
-.main-content {
+#main-content {
     display: flex;
     flex-direction: column;
 }
 
-.main-content article p {
+#main-content article p {
     padding-top: 1em;
 }
 
-.main-content article img {
+#main-content article img {
     width: 80%;
     display: block;
     margin: 1em auto;

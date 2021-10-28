@@ -26,16 +26,16 @@ html, body {
     grid-template-rows: 50px 1fr minmax(50px, auto);
 }
 
-.top-bar {
+#top-bar {
     border: 1px solid black;
     grid-area: head;
 }
 
-.main-content {
+#main-content {
     grid-area: main;
 }
 
-.bottom-bar {
+#bottom-bar {
     border: 1px solid black;
     grid-area: foot;
 }
