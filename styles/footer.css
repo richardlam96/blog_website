@@ -43,6 +43,10 @@
     margin: 1rem;
 }
 
+#user-summary .social-links i:hover {
+    color: rgba(209, 255, 255, 0.8);
+}
+
 @media (min-width: 450px) {
     #user-summary {
         flex-direction: row;
