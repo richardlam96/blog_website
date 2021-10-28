@@ -36,6 +36,13 @@
     padding: 0 1rem;
 }
 
+#user-summary .social-links i {
+    color: rgb(209, 255, 255);
+    font-size: 2rem;
+    text-decoration: none;
+    margin: 1rem;
+}
+
 @media (min-width: 450px) {
     #user-summary {
         flex-direction: row;
