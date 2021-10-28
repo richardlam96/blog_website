@@ -15,6 +15,17 @@ html, body {
     height: 100%;
 }
 
+button,
+input {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+input:focus {
+    outline: none;
+}
+
 #app {
     width: 100%;
     min-height: 100%;
