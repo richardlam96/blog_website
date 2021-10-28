@@ -1,14 +1,14 @@
-.nav-bar {
+#nav-bar {
+    background: rgba(0, 128, 128, 0.9);
+    padding: 1rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
-.nav-option {
-    border: 1px solid green;
-    height: 6ch;
-    line-height: 6ch;
-    width: 8ch;
-    text-align: center;
+.nav-option i {
+    color: white;
+    font-size: 2rem;
+    line-height: 2rem;
 }
 
 #user-summary,
@@ -83,6 +83,11 @@
 }
 
 @media (min-width: 450px) {
+    #nav-bar {
+        justify-content: center;
+        column-gap: 4rem;
+    }
+
     #user-summary {
         flex-direction: row;
         max-width: 35rem;
