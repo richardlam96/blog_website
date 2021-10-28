@@ -13,6 +13,11 @@ body, h1, h2, h3, p {
 
 html, body {
     height: 100%;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
 }
 
 button,
@@ -34,11 +39,10 @@ input:focus {
                          ". main ."
                          "foot foot foot";
     grid-template-columns: minmax(10%, auto) 1fr minmax(10%, auto);
-    grid-template-rows: 50px 1fr minmax(50px, auto);
+    grid-template-rows: minmax(50px, auto) 1fr minmax(50px, auto);
 }
 
 #top-bar {
-    border: 1px solid black;
     grid-area: head;
 }
 
