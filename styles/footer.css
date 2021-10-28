@@ -43,10 +43,14 @@
     font-size: 2rem;
     text-decoration: none;
     margin: 1rem;
+    transition: all .2s ease;
+    -webkit-transition: all .2s ease;
+    -moz-transition: all .2s ease;
 }
 
 #user-summary .social-links i:hover {
     color: rgba(209, 255, 255, 0.8);
+    font-size: 2.2rem;
 }
 
 #subscribe-form {
