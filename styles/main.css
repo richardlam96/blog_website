@@ -40,13 +40,22 @@ input:focus {
 }
 
 button, .button {
-    background: var(--primary-color-light);
-    color: var(--primary-color-dark);
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background: var(--primary-color);
+    outline: 1px solid var(--color-white);
+    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
 }
 
 button:hover, .button:hover {
+    font-size: 1.2rem;
     background: var(--primary-color-dark);
-    color: var(--primary-color-light);
+    color: var(--color-white);
+    outline: 1px solid var(--color-white);
+    outline-offset: -.25rem;
 }
 
 figcaption {
