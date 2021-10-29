@@ -68,6 +68,10 @@ figcaption {
     opacity: 0.85;
 }
 
+mark {
+    background: var(--secondary-color-light);
+}
+
 #app {
     width: 100%;
     min-height: 100%;
