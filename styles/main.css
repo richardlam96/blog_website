@@ -69,6 +69,14 @@ figcaption {
     h1 {
         font-size: 18vw;
     }
+
+    #app {
+        grid-template-columns: 5% 1fr 5%;
+    }
+
+    #main-content article figure {
+        width: 100%;
+    }
 }
 
 @media (min-width: 650px) {
