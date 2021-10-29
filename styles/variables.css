@@ -3,4 +3,11 @@
 :root {
     --heading-font-family: 'Playfair Display', serif;
     --general-font-family: 'Manrope', sans-serif;
+    --primary-color: #34acbc;
+    --primary-color-dark: #065464;
+    --primary-color-light: #85c3cf;
+    --secondary-color: #ddb247;
+    --color-black: #212121;
+    --color-grey: #7a7d84;
+    --color-white: #efe6e6;
 }
