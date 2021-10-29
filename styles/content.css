@@ -15,7 +15,7 @@
 #main-content article figure {
     width: 80%;
     margin: 1.5em auto;
-    border: 1px solid grey;
+    border: 1px solid var(--color-grey);
     padding: 0.8em;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .card {
-    border: 1px solid black;
+    border: 1px solid var(--color-black);
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -82,7 +82,7 @@
 }
 
 .card-labels > .label {
-    border: 1px solid teal;
+    border: 1px solid var(--primary-color);
     border-radius: 10%;
     margin: 0.25rem;
     padding: 0.25rem;

@@ -8,8 +8,8 @@
 }
 
 #top-bar a {
-    background: teal;
-    color: white;
+    background: var(--primary-color);
+    color: var(--color-white);
     font-size: 1.2rem;
     padding: 0.5rem;
     border-radius: 0.5rem;
