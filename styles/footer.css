@@ -26,7 +26,7 @@
 }
 
 #user-summary .avatar img {
-    border: .25rem solid var(--secondary-color);
+    border: .35rem solid var(--secondary-color);
     width: 100px;
     height: 100px;
     object-fit: cover;
@@ -71,17 +71,7 @@
 }
 
 #subscribe-form input {
-    background: white;
-}
-
-#subscribe-form button {
-    background: rgb(209, 255, 255);
-    color: teal;
-}
-
-#subscribe-form button:hover {
-    color: rgb(209, 255, 255);
-    background: teal;
+    background: var(--color-white);
 }
 
 @media (min-width: 450px) {

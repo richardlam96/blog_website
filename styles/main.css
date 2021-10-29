@@ -39,6 +39,16 @@ input:focus {
     outline: none;
 }
 
+button, .button {
+    background: var(--primary-color-light);
+    color: var(--primary-color-dark);
+}
+
+button:hover, .button:hover {
+    background: var(--primary-color-dark);
+    color: var(--primary-color-light);
+}
+
 figcaption {
     font-style: italic;
     opacity: 0.85;
