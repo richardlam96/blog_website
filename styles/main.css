@@ -60,6 +60,7 @@ button, .button {
 button:hover, .button:hover {
     outline: 1px solid var(--color-white);
     outline-offset: -.25rem;
+    cursor: pointer;
 }
 
 figcaption {
