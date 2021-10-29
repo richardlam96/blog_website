@@ -48,9 +48,16 @@
     padding: 0 1rem;
 }
 
+#user-summary .social-links {
+    font-size: 2rem;
+}
+
+#user-summary .social-links:hover {
+    font-size: 2.2rem;
+}
+
 #user-summary .social-links i {
     color: var(--color-white);
-    font-size: 2rem;
     text-decoration: none;
     margin: 1rem;
     transition: all .2s ease;
@@ -60,7 +67,6 @@
 
 #user-summary .social-links i:hover {
     color: var(--primary-color-dark);
-    font-size: 2.2rem;
 }
 
 #subscribe-form {
