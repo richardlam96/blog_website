@@ -37,6 +37,11 @@ input:focus {
     outline: none;
 }
 
+figcaption {
+    font-style: italic;
+    opacity: 0.85;
+}
+
 #app {
     width: 100%;
     min-height: 100%;
@@ -68,7 +73,7 @@ input:focus {
 
 @media (min-width: 650px) {
     h1 {
-        font-size: 2em;
+        font-size: 4rem;
     }
 
     #recent-post > .card {

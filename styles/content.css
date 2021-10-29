@@ -3,22 +3,33 @@
     flex-direction: column;
 }
 
+#main-content article {
+    margin-bottom: 3rem;
+}
+
 #main-content article p {
+    font-size: 1.2rem;
     padding-top: 1em;
 }
 
-#main-content article img {
+#main-content article figure {
     width: 80%;
-    display: block;
-    margin: 1em auto;
+    margin: 1.5em auto;
     border: 1px solid grey;
-    padding: 1em;
+    padding: 0.8em;
+}
+
+#main-content article img {
+    width: 100%;
 }
 
 .page-title {
-    font-size: 2.5rem;
     text-align: center;
     margin-bottom: 3rem;
+}
+
+.page-title a {
+    text-decoration: underline;
 }
 
 #recent-post, #old-posts {
