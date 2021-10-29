@@ -18,6 +18,12 @@ h1, h2, h3 {
     font-family: var(--heading-font-family);
 }
 
+h1 {
+    text-shadow: 
+        1px 1px 0 var(--primary-color-dark),
+        2px 2px 2px var(--secondary-color);
+}
+
 html, body {
     height: 100%;
     scroll-behavior: smooth;
@@ -44,6 +50,7 @@ button, .button {
     padding: 0.5rem;
     border-radius: 0.5rem;
     background: var(--primary-color);
+    color: var(--color-white);
     outline: 1px solid var(--color-white);
     transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -51,9 +58,6 @@ button, .button {
 }
 
 button:hover, .button:hover {
-    font-size: 1.2rem;
-    background: var(--primary-color-dark);
-    color: var(--color-white);
     outline: 1px solid var(--color-white);
     outline-offset: -.25rem;
 }
