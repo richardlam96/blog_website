@@ -126,13 +126,13 @@ mark {
     }
 
     .card-list .card {
-        flex: 1 1 calc(50% - 1rem);
+        flex: 0 1 calc(50% - 1rem);
     }
 }
 
 @media (min-width: 1000px) {
     #app {
-        grid-template-columns: auto 1000px auto;
+        grid-template-columns: minmax(10%, auto) 1000px minmax(10%, auto);
     }
 
     .card-list .card {
