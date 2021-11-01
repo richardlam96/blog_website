@@ -136,7 +136,7 @@ mark {
     }
 
     .card-list .card {
-        flex: 1 1 calc(33% - 1rem);
+        flex: 0 1 calc(33% - 1rem);
     }
 
     #main-content article figure {
