@@ -59,6 +59,7 @@
 }
 
 .card-image {
+    min-height: 200px;
     max-height: 300px;
     overflow: hidden;
     border-radius: 2rem;
@@ -88,7 +89,7 @@
 
 .card-labels > .label {
     border: 1px solid var(--primary-color);
-    border-radius: 10%;
+    border-radius: 10px;
     margin: 0.25rem;
     padding: 0.25rem;
     min-width: 8ch;
