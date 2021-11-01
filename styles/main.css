@@ -98,7 +98,7 @@ mark {
 
 @media (max-width: 650px) {
     h1 {
-        font-size: 18vw;
+        font-size: 12vw;
     }
 
     #app {
@@ -137,5 +137,9 @@ mark {
 
     .card-list .card {
         flex: 1 1 calc(33% - 1rem);
+    }
+
+    #main-content article figure {
+        width: 60%;
     }
 }
